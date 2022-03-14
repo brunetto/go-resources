@@ -10,6 +10,9 @@ import (
 	"github.com/rs/zerolog/log"
 )
 
+// here accepting and returning http.HandlerFunc automatically cast
+// func(http.ResponseWriter, *http.Request) to http.Handler
+// allowing us to pass the function as a Handler
 func withTimedLogger(lg zerolog.Logger, next http.HandlerFunc) http.HandlerFunc {
 	return func(w http.ResponseWriter, r *http.Request) {
 		t0 := time.Now()
@@ -28,7 +31,7 @@ func main() {
 	lg := zerolog.New(os.Stderr).With().Timestamp().Logger()
 
 	mux := http.NewServeMux()
-	mux.HandleFunc("/", withTimedLogger(lg, hfn))
+	mux.Handle("/", withTimedLogger(lg, hfn))
 
 	srv := &http.Server{
 		ReadTimeout:  5 * time.Second,
