@@ -29,13 +29,6 @@ func main() {
 
 	wkrs, rdc := &sync.WaitGroup{}, &sync.WaitGroup{}
 
-	// start workers
-	for i := 0; i < img.Bounds().Dx()/tileSize; i++ {
-		wkrs.Add(1)
-
-		go worker(wkrs, in, out)
-	}
-
 	// launch "reduce" closure
 	rdc.Add(1)
 
@@ -47,6 +40,13 @@ func main() {
 			draw.Draw(img, tile.Bounds(), tile, tile.Bounds().Min, draw.Src)
 		}
 	}()
+
+	// start workers
+	for i := 0; i < img.Bounds().Dx()/tileSize; i++ {
+		wkrs.Add(1)
+
+		go worker(wkrs, in, out)
+	}
 
 	// send work:
 	// it would be not efficient to create a worker per pixel,
