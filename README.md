@@ -11,6 +11,7 @@
 * https://go.dev/solutions/#case-studies
 * https://go101.org/
 * https://blogtitle.github.io/some-useful-patterns/
+* https://github.com/avelino/awesome-go
 
 ## Web
 
