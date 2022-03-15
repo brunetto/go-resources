@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"image"
 	"image/color"
 	"image/draw"
@@ -8,18 +9,22 @@ import (
 	"log"
 	"os"
 	"sync"
+	"time"
 
 	"github.com/pkg/errors"
 )
 
 const (
-	tileSize     = 100
-	imgSize  int = 1e3
-
-	chanSize int = 1e3
+	tileSize = 100
+	imgSize  = 1e3
+	nWkrs    = 1e2
+	chanSize = nWkrs + 100
 )
 
 func main() {
+	t0 := time.Now()
+	defer func() { fmt.Println("done in", time.Since(t0)) }()
+
 	// create final image container
 	img := image.NewRGBA(image.Rect(0, 0, imgSize, imgSize))
 
@@ -42,7 +47,7 @@ func main() {
 	}()
 
 	// start workers
-	for i := 0; i < img.Bounds().Dx()/tileSize; i++ {
+	for i := 0; i < nWkrs; i++ {
 		wkrs.Add(1)
 
 		go worker(wkrs, in, out)
@@ -58,8 +63,13 @@ func main() {
 				x: x, y: y, dx: tileSize, dy: tileSize,
 				// here you can change the type of resulting image by choosing
 				// how to color each tile
-				colorFunc: newCF(imgSize), // single image
-				// colorFunc: newCF(tileSize), // identical tiles
+				colorFunc: func() cf {
+					if x >= y {
+						return newCF(imgSize) // single image
+					} else {
+						return newCF(tileSize) // identical tiles
+					}
+				}(),
 			}
 		}
 	}
@@ -88,7 +98,7 @@ func newCF(sideSize int) cf {
 
 type work struct {
 	x, y, dx, dy int
-	colorFunc    func(x, y int) color.RGBA
+	colorFunc    cf //func(x, y int) color.RGBA
 }
 
 func worker(wkrs *sync.WaitGroup, in chan work, out chan *image.RGBA) {
