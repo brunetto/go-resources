@@ -16,6 +16,7 @@
 * [Go experience reports](https://github.com/golang/go/wiki/ExperienceReports)
 * [Go style guide](https://go.dev/doc/effective_go)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+* [Language specs](https://go.dev/ref/spec)
 
 ## Web
 
@@ -28,6 +29,7 @@
 
 * [Slices Gotchas](https://blogtitle.github.io/go-slices-gotchas/)
 * [Slices from the ground up](https://dave.cheney.net/2018/07/12/slices-from-the-ground-up)
+* [Slice utils](https://pkg.go.dev/golang.org/x/exp/slices)
 
 ##  Concurrency
 
@@ -39,6 +41,7 @@
 
 * [Generics intro and opinions](https://blogtitle.github.io/go-generics/)
 * [Tutorial](https://go.dev/doc/tutorial/generics)
+* [Generics Proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 
 ## Errors
 
@@ -69,6 +72,11 @@
 * [Go Context 101](https://medium.com/codex/go-context-101-ebfaf655fa95)
 * [Context in Golang!](https://levelup.gitconnected.com/context-in-golang-98908f042a57)
 * [How to correctly use context.Context in Go 1.7](https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39)
+
+## Fuzzin 
+
+* [Docs](https://go.dev/doc/fuzz/)
+* [Tutorial](https://go.dev/doc/tutorial/fuzz)
 
 ## Misc
 
