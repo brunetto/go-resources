@@ -7,16 +7,24 @@
 * [The Zen of Go](https://dave.cheney.net/2020/02/23/the-zen-of-go)
 * [Less is more](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)
 * [Go at Google: Language Design in the Service of Software Engineering](https://talks.golang.org/2012/splash.article)
+* [Venice Gophers slides](https://docs.google.com/presentation/d/1FUZhLV9QC5EZBI4yUm3UCiyXChgkWyv0CtBZ6oTZM_I/edit?usp=sharing)
+* [JustForFunc](https://www.youtube.com/c/JustForFunc)
+* [Go 101](https://go101.org/)
+* [Learning resources](https://ryan0x44.medium.com/resources-for-learning-go-79fd2de0d6ae)
+* [Official Go Tour](https://go.dev/tour/welcome/1)
 * [Case studies, official site](https://go.dev/solutions/#case-studies)
     * [Zalando Skipper](https://github.com/zalando/skipper)
 * [Compatibility promise](https://go.dev/doc/go1compat)
-* [Go 101](https://go101.org/)
 * [Patterns](https://blogtitle.github.io/some-useful-patterns/)
 * [awsome Go (resources collection)](https://github.com/avelino/awesome-go)
 * [Go experience reports](https://github.com/golang/go/wiki/ExperienceReports)
 * [Go style guide](https://go.dev/doc/effective_go)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Language specs](https://go.dev/ref/spec)
+
+## Tutorial-ish
+
+
 
 ## Web
 
