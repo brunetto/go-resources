@@ -67,21 +67,21 @@
 
 ## Context
 
-* [Understanding the context package in golang](http://p.agnihotry.com/post/understanding_the_context_package_in_golang/)
+* [Context Package Semantics In Go](https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html)
 * [Getting Started with Go Context](https://dev.to/gopher/getting-started-with-go-context-l7g)
 * [Context is for cancelation](https://dave.cheney.net/2017/01/26/context-is-for-cancelation)
 * [Context isn’t for cancellation](https://dave.cheney.net/2017/08/20/context-isnt-for-cancellation)
 * [Go Concurrency Patterns: Context](https://go.dev/blog/context)
-* [It's time to understand Golang Contexts.](https://www.linkedin.com/pulse/its-time-understand-golang-contexts-lucas-schenkel-schieferdecker/)
-* [Context Package Semantics In Go](https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html)
 * [Cancelation, Context, and Plumbing](https://talks.golang.org/2014/gotham-context.slide#18)
+<!--* [Understanding the context package in golang](http://p.agnihotry.com/post/understanding_the_context_package_in_golang/)
+* [It's time to understand Golang Contexts.](https://www.linkedin.com/pulse/its-time-understand-golang-contexts-lucas-schenkel-schieferdecker/)
 * [Practical Go Lessons: context](https://www.practical-go-lessons.com/chap-37-context)
 * [Golang and context - an explanation](https://pauldigian.com/golang-and-context-an-explanation)
 * [Go Context 101](https://medium.com/codex/go-context-101-ebfaf655fa95)
 * [Context in Golang!](https://levelup.gitconnected.com/context-in-golang-98908f042a57)
-* [How to correctly use context.Context in Go 1.7](https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39)
+* [How to correctly use context.Context in Go 1.7](https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39) -->
 
-## Fuzzin 
+## Fuzzing 
 
 * [Docs](https://go.dev/doc/fuzz/)
 * [Tutorial](https://go.dev/doc/tutorial/fuzz)
