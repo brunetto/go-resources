@@ -7,7 +7,7 @@
 # Suggested path
 
 1. [stdlib-0](./0-basic/), [stdlib-1](./1-std/), [stdlib-2](./2-std-middlewere/)
-2. [gorilla/ux](https://github.com/gorilla/mux)
+2. [gorilla/mux](https://github.com/gorilla/mux)
 3. [Gin Gonic](https://github.com/gin-gonic/gin)
 4. [Buffalo](https://gobuffalo.io/it/)
 5. Extra: [Ardan Labs/Bill Kennedy service code, talks and workshops](https://github.com/ardanlabs/service) as inspiration and [go-kit](https://gokit.io/) as reading
