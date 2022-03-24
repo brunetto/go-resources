@@ -64,6 +64,7 @@
 * [proposal: leave "if err != nil" alone?](https://github.com/golang/go/issues/32825)
 * [Error Handling — Problem Overview](https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling-overview.md)
 * [Considerations on error handling](https://blogtitle.github.io/considerations-on-error-handling/)
+* https://levelup.gitconnected.com/better-error-handling-in-golang-theory-and-practical-tips-758b90d3f6b4
 
 ## Context
 
@@ -93,7 +94,11 @@
 # Interesting libraries and projects
 
 * Build cross-platform GUI applications using Go + HTML + CSS + JS https://wails.io/
-
-
-
-
+* https://github.com/dannyfritz/commit-message-emoji
+* https://github.com/cshum/imagor
+* https://github.com/segmentio/ksuid
+* https://github.com/jesseduffield/lazygit
+* https://github.com/melbahja/got
+* https://github.com/pkg/json
+* https://github.com/goplus/gop
+* https://github.com/bsipos/thist
