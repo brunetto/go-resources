@@ -89,3 +89,11 @@
 ## Misc
 
 * [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 
+
+# Interesting libraries and projects
+
+* Build cross-platform GUI applications using Go + HTML + CSS + JS https://wails.io/
+
+
+
+
