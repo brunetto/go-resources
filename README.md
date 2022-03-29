@@ -90,6 +90,7 @@
 ## Misc
 
 * [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 
+* [A Lodash-style Go library](https://github.com/samber/lo)
 
 # Interesting libraries and projects
 
