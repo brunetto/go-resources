@@ -7,6 +7,7 @@
 * [The Zen of Go](https://dave.cheney.net/2020/02/23/the-zen-of-go)
 * [Less is more](https://commandcenter.blogspot.com/2012/06/less-is-exponentially-more.html)
 * [Go at Google: Language Design in the Service of Software Engineering](https://talks.golang.org/2012/splash.article)
+* [Go modules & supply chain](https://go.dev/blog/supply-chain)
 * [Venice Gophers slides](https://docs.google.com/presentation/d/1FUZhLV9QC5EZBI4yUm3UCiyXChgkWyv0CtBZ6oTZM_I/edit?usp=sharing)
 * [JustForFunc](https://www.youtube.com/c/JustForFunc)
 * [Go 101](https://go101.org/)
