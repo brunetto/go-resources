@@ -22,11 +22,6 @@
 * [Go style guide](https://go.dev/doc/effective_go)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Language specs](https://go.dev/ref/spec)
-
-## Tutorial-ish
-
-
-
 ## Web
 
 * [Bill Kennedy - You Want To Build a Web Service?](https://www.youtube.com/watch?v=IV0wrVb31Pg&ab_channel=GoLabconference)
@@ -92,6 +87,7 @@
 
 * [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 
 * [A Lodash-style Go library](https://github.com/samber/lo)
+* [Go Does Not Need a Java Style GC](https://itnext.io/go-does-not-need-a-java-style-gc-ac99b8d26c60)
 
 # Interesting libraries and projects
 
