@@ -46,6 +46,7 @@
 * [Generics intro and opinions](https://blogtitle.github.io/go-generics/)
 * [Tutorial](https://go.dev/doc/tutorial/generics)
 * [Generics Proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
+* [Generics can make your Go code slower](https://planetscale.com/blog/generics-can-make-your-go-code-slower)
 
 ## Errors
 
