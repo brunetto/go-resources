@@ -79,6 +79,10 @@
 * [Context in Golang!](https://levelup.gitconnected.com/context-in-golang-98908f042a57)
 * [How to correctly use context.Context in Go 1.7](https://medium.com/@cep21/how-to-correctly-use-context-context-in-go-1-7-8f2c0fafdf39) -->
 
+## IDs
+
+* https://encore.dev/blog/go-1.18-generic-identifiers
+
 ## Fuzzing 
 
 * [Docs](https://go.dev/doc/fuzz/)
