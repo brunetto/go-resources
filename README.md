@@ -47,6 +47,9 @@
 * [Tutorial](https://go.dev/doc/tutorial/generics)
 * [Generics Proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
 * [Generics can make your Go code slower](https://planetscale.com/blog/generics-can-make-your-go-code-slower)
+* https://github.com/bradenaw/juniper
+* https://eli.thegreenplace.net/2022/faster-sorting-with-go-generics/
+* https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md
 
 ## Errors
 
@@ -93,6 +96,8 @@
 * [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 
 * [A Lodash-style Go library](https://github.com/samber/lo)
 * [Go Does Not Need a Java Style GC](https://itnext.io/go-does-not-need-a-java-style-gc-ac99b8d26c60)
+* https://golang.design/history/
+* https://go.dev/blog/get-familiar-with-workspaces
 
 # Interesting libraries and projects
 
