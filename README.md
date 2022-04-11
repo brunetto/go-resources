@@ -50,6 +50,7 @@
 * https://github.com/bradenaw/juniper
 * https://eli.thegreenplace.net/2022/faster-sorting-with-go-generics/
 * https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md
+* https://encore.dev/blog/go-1.18-generic-identifiers
 
 ## Errors
 
