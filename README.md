@@ -21,6 +21,7 @@
 * [Go experience reports](https://github.com/golang/go/wiki/ExperienceReports)
 * [Go style guide](https://go.dev/doc/effective_go)
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
+* [Tests Best Practices](https://github.com/golang/go/wiki/TestComments)
 * [Language specs](https://go.dev/ref/spec)
 ## Web
 
