@@ -44,6 +44,7 @@
 
 ## Generics 
 
+* https://go.dev/blog/when-generics
 * [Generics intro and opinions](https://blogtitle.github.io/go-generics/)
 * [Tutorial](https://go.dev/doc/tutorial/generics)
 * [Generics Proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/43651-type-parameters.md)
