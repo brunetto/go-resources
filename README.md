@@ -27,6 +27,7 @@
 ## Packages and project structure
 
 * https://github.com/golang-standards/project-layout
+* https://rakyll.org/style-packages/
 
 ## Web
 
