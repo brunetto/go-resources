@@ -23,6 +23,11 @@
 * [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 * [Tests Best Practices](https://github.com/golang/go/wiki/TestComments)
 * [Language specs](https://go.dev/ref/spec)
+
+## Packages and project structure
+
+* https://github.com/golang-standards/project-layout
+
 ## Web
 
 * [Bill Kennedy - You Want To Build a Web Service?](https://www.youtube.com/watch?v=IV0wrVb31Pg&ab_channel=GoLabconference)
