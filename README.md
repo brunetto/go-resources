@@ -113,6 +113,7 @@
 * https://golang.design/history/
 * https://go.dev/blog/get-familiar-with-workspaces
 * https://www.youtube.com/watch?v=5DVV36uqQ4E&ab_channel=NautHumanProductions
+* [Code: Align the happy path to the left edge](https://medium.com/@matryer/line-of-sight-in-code-186dd7cdea88)
 
 # Interesting libraries and projects
 
