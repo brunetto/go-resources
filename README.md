@@ -80,6 +80,11 @@
 * [Considerations on error handling](https://blogtitle.github.io/considerations-on-error-handling/)
 * https://levelup.gitconnected.com/better-error-handling-in-golang-theory-and-practical-tips-758b90d3f6b4
 
+## Auth/authz
+
+* https://eli.thegreenplace.net/2021/go-https-servers-with-tls/
+
+
 ## Context
 
 * [Context Package Semantics In Go](https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html)
