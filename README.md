@@ -28,6 +28,7 @@
 
 * https://github.com/golang-standards/project-layout
 * https://rakyll.org/style-packages/
+* https://go.dev/blog/package-names
 
 ## Web
 
