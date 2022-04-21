@@ -31,7 +31,8 @@ func main() {
 	lg := zerolog.New(os.Stderr).With().Timestamp().Logger()
 
 	mux := http.NewServeMux()
-	mux.Handle("/", withTimedLogger(lg, hfn))
+	mux.Handle("/", withTimedLogger(lg, hfn)) // you can also have a global middlewere, 
+						  // see https://eli.thegreenplace.net/2021/rest-servers-in-go-part-5-middleware/
 
 	srv := &http.Server{
 		ReadTimeout:  5 * time.Second,
