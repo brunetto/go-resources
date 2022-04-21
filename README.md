@@ -38,6 +38,7 @@
 *   https://github.com/ardanlabs/service#more-about-go
 * [exposing Go on the internet](https://blog.cloudflare.com/exposing-go-on-the-internet/)
 * [1M RPM with Go](http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/)
+* [REST Servers in Go](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
 
 ## Slices 
 
