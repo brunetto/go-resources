@@ -29,6 +29,8 @@
 * https://github.com/golang-standards/project-layout
 * https://rakyll.org/style-packages/
 * https://go.dev/blog/package-names
+* videos
+   * https://www.youtube.com/watch?v=oL6JBUk6tj0&ab_channel=GopherAcademy 
 
 ## Web
 
