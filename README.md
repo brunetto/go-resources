@@ -26,19 +26,18 @@
 
 ## Packages and project structure
 
-* https://github.com/golang-standards/project-layout
-* https://rakyll.org/style-packages/
-* https://go.dev/blog/package-names
-* https://www.youtube.com/watch?v=oL6JBUk6tj0&ab_channel=GopherAcademy 
-* https://www.youtube.com/watch?v=MzTcsI6tn-0&ab_channel=GopherConRussia
-* https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1
-* https://www.youtube.com/watch?v=MzTcsI6tn-0&ab_channel=GopherConRussia
-* https://www.youtube.com/watch?v=PTE4VJIdHPg&ab_channel=GopherConEurope
+* [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
+* [Style guideline for Go packages](https://rakyll.org/style-packages/)
+* [Package names](https://go.dev/blog/package-names)
+* [Ashley McNamara + Brian Ketelsen. Go best practices.](https://www.youtube.com/watch?v=MzTcsI6tn-0&ab_channel=GopherConRussia)
+* [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0&ab_channel=GopherAcademy) 
+* [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
+* [GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming](https://www.youtube.com/watch?v=PTE4VJIdHPg&ab_channel=GopherConEurope)
 
 ## Web
 
 * [Bill Kennedy - You Want To Build a Web Service?](https://www.youtube.com/watch?v=IV0wrVb31Pg&ab_channel=GoLabconference)
-*   https://github.com/ardanlabs/service#more-about-go
+   * [Ardan Labs repo](https://github.com/ardanlabs/service#more-about-go)
 * [exposing Go on the internet](https://blog.cloudflare.com/exposing-go-on-the-internet/)
 * [1M RPM with Go](http://marcio.io/2015/07/handling-1-million-requests-per-minute-with-golang/)
 * [REST Servers in Go](https://eli.thegreenplace.net/2021/rest-servers-in-go-part-1-standard-library/)
@@ -85,7 +84,7 @@
 
 ## Auth/authz
 
-* https://eli.thegreenplace.net/2021/go-https-servers-with-tls/
+* [Go HTTPS servers with TLS](https://eli.thegreenplace.net/2021/go-https-servers-with-tls/)
 
 
 ## Context
@@ -106,7 +105,10 @@
 
 ## IDs
 
-* https://encore.dev/blog/go-1.18-generic-identifiers
+* [How we used Go 1.18 when designing our Identifiers](https://encore.dev/blog/go-1.18-generic-identifiers)
+* [Globally Unique ID Generator](https://github.com/rs/xid) (this seems to be the best)
+* [UUID](https://github.com/gofrs/uuid)
+* [ksuid](https://github.com/segmentio/ksuid)
 
 ## Fuzzing 
 
@@ -118,19 +120,23 @@
 * [Code Review Developer Guide](https://google.github.io/eng-practices/review/) 
 * [A Lodash-style Go library](https://github.com/samber/lo)
 * [Go Does Not Need a Java Style GC](https://itnext.io/go-does-not-need-a-java-style-gc-ac99b8d26c60)
-* https://golang.design/history/
-* https://go.dev/blog/get-familiar-with-workspaces
-* https://www.youtube.com/watch?v=5DVV36uqQ4E&ab_channel=NautHumanProductions
+* [Go: A Documentary](https://golang.design/history/)
+* [Get familiar with workspaces](https://go.dev/blog/get-familiar-with-workspaces)
+* [GothamGo 2018 - Things in Go I Never Use by Mat Ryer](https://www.youtube.com/watch?v=5DVV36uqQ4E&ab_channel=NautHumanProductions)
 * [Code: Align the happy path to the left edge](https://medium.com/@matryer/line-of-sight-in-code-186dd7cdea88)
+* [Awsome Go: A curated list of awesome Go frameworks, libraries and software](https://github.com/avelino/awesome-go)
 
 # Interesting libraries and projects
 
-* Build cross-platform GUI applications using Go + HTML + CSS + JS https://wails.io/
-* https://github.com/dannyfritz/commit-message-emoji
-* https://github.com/cshum/imagor
-* https://github.com/segmentio/ksuid
-* https://github.com/jesseduffield/lazygit
-* https://github.com/melbahja/got
-* https://github.com/pkg/json
-* https://github.com/goplus/gop
-* https://github.com/bsipos/thist
+* [Build cross-platform GUI applications using Go + HTML + CSS + JS](https://wails.io/)
+* [Commit Message Emoji 👋](https://github.com/dannyfritz/commit-message-emoji)
+* Image manipulation
+   * [Caire: Content aware image resize library](https://github.com/esimov/caire)
+   * [Imagor](https://github.com/cshum/imagor) 
+   * [bild](https://github.com/anthonynsimon/bild)
+   * [bimg](https://github.com/h2non/bimg)
+* [LazyGit](https://github.com/jesseduffield/lazygit)
+* [Got.](https://github.com/melbahja/got) (~ curl and wget)
+* [An alternative JSON decoder for Go.](https://github.com/pkg/json)
+* [The Go+ language for engineering, STEM education, and data science](https://github.com/goplus/gop)
+* [Thist](https://github.com/bsipos/thist) (terminal histograms)
