@@ -66,6 +66,8 @@
 * https://eli.thegreenplace.net/2022/faster-sorting-with-go-generics/
 * https://github.com/golang/proposal/blob/master/design/generics-implementation-dictionaries-go1.18.md
 * https://encore.dev/blog/go-1.18-generic-identifiers
+* https://christine.website/blog/gonads-2022-04-24
+* https://medium.com/@jon_43067/go-generics-and-concurrency-d0dccab73a73
 
 ## Errors
 
