@@ -5,6 +5,8 @@ import (
 	"fmt"
 )
 
+// Have you read https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully?
+
 // sentinel error
 const awsomeError = "my awsome error"
 
