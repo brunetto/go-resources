@@ -83,6 +83,8 @@
 * [Error Handling — Problem Overview](https://go.googlesource.com/proposal/+/master/design/go2draft-error-handling-overview.md)
 * [Considerations on error handling](https://blogtitle.github.io/considerations-on-error-handling/)
 * https://levelup.gitconnected.com/better-error-handling-in-golang-theory-and-practical-tips-758b90d3f6b4
+* https://earthly.dev/blog/golang-errors/
+
 
 ## Auth/authz
 
