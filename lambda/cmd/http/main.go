@@ -6,7 +6,7 @@ import (
 	"os"
 
 	"go-resources/lambda/example"
-	"go-resources/lambda/helpers/httph"
+	"go-resources/lambda/helpers/hhttp"
 
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
@@ -32,7 +32,7 @@ func main() {
 	// * there're equivalent for net/http, gin-gonic, ...
 	router := mux.NewRouter()
 
-	router.Use(httph.NewLogAndRecover(lg)) // logging middleware
+	router.Use(hhttp.NewLogAndRecover(lg)) // logging middleware
 	router.Path("/usage").
 		Queries("query_param_1", "{query_param_1}", "query_param_2", "{query_param_2}").
 		Methods("POST").
