@@ -1,4 +1,4 @@
-package hHttp
+package hhttp
 
 import (
 	"net/http"
