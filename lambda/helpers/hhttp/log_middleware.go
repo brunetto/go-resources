@@ -1,6 +1,7 @@
 package hhttp
 
 import (
+	"go-resources/lambda/helpers/hctx"
 	"net/http"
 	"runtime/debug"
 	"time"
@@ -26,7 +27,7 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 
 			// get context amd enrich logger (e.g. with request id)
 			ctx := r.Context()
-			lg = CtxLogger(ctx, lg)
+			lg = hctx.CtxLogger(ctx, lg)
 
 			// wrap http response
 			sr := &StatusRecorder{ResponseWriter: w}
