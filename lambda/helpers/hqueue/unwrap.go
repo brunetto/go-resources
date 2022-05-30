@@ -1,4 +1,4 @@
-package queueh
+package hqueue
 
 import (
 	"encoding/json"
