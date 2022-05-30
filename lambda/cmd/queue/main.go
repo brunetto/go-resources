@@ -3,15 +3,17 @@ package main
 import (
 	"context"
 	"fmt"
-	"go-resources/lambda/example"
-	"go-resources/lambda/helpers/queueh"
-	"go-resources/lambda/httph"
 	"os"
 	"runtime/debug"
 	"time"
 
+	"go-resources/lambda/example"
+	"go-resources/lambda/helpers/hctx"
+	"go-resources/lambda/helpers/hqueue"
+
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"
+
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"
 )
@@ -38,7 +40,7 @@ type LambdaHandlerSQS func(context.Context, events.SQSEvent) error
 func NewLambdaHandlerSQS( /* your depts here */ lg zerolog.Logger) LambdaHandlerSQS {
 	return func(ctx context.Context, evts events.SQSEvent) error {
 		// init logging, recovering, timing
-		lg = httph.CtxLogger(ctx, lg)
+		lg = hctx.CtxLogger(ctx, lg)
 		t0 := time.Now()
 
 		defer func() {
@@ -77,7 +79,7 @@ func NewLambdaHandlerSQS( /* your depts here */ lg zerolog.Logger) LambdaHandler
 			// I may want, in the future, check the event type.
 			var in example.In
 
-			err := queueh.Unwrap(msg.Body, &in)
+			err := hqueue.Unwrap(msg.Body, &in)
 			if err != nil {
 				return AndLog(lg, errors.Wrap(err, "can't extract original evento from SQS message"))
 			}
