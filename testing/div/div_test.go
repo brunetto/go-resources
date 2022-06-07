@@ -1,8 +1,9 @@
 package div_test
 
 import (
-	"go-resources/testing/div"
 	"testing"
+
+	"github.com/brunetto/go-resources/testing/div"
 
 	"github.com/stretchr/testify/assert"
 )

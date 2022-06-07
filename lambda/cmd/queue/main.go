@@ -7,9 +7,9 @@ import (
 	"runtime/debug"
 	"time"
 
-	"go-resources/lambda/example"
-	"go-resources/lambda/helpers/hctx"
-	"go-resources/lambda/helpers/hqueue"
+	"github.com/brunetto/go-resources/lambda/example"
+	"github.com/brunetto/go-resources/lambda/helpers/hctx"
+	"github.com/brunetto/go-resources/lambda/helpers/hqueue"
 
 	"github.com/aws/aws-lambda-go/events"
 	"github.com/aws/aws-lambda-go/lambda"

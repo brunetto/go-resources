@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"go-resources/lambda/example"
-	"go-resources/lambda/helpers/hhttp"
+	"github.com/brunetto/go-resources/lambda/example"
+	"github.com/brunetto/go-resources/lambda/helpers/hhttp"
 
 	"github.com/gorilla/mux"
 	"github.com/pkg/errors"
