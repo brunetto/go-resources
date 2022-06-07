@@ -1,8 +1,9 @@
 package main
 
 import (
-	"errors"
 	"fmt"
+
+	"github.com/pkg/errors"
 )
 
 // Have you read https://dave.cheney.net/2016/04/27/dont-just-check-errors-handle-them-gracefully?
@@ -33,4 +34,6 @@ func main() {
 		"the variable used as sentinel error:", errors.Is(err, err1))
 	fmt.Println("errors.Is checks that the error we got is or wraps "+
 		"the variable used as sentinel error, and now that we \"asserted\" the error type this works:", errors.Is(tErr.err, err1))
+
+	fmt.Println(errors.Is(errors.Wrap(err1, "test"), err1))
 }

@@ -1,10 +1,11 @@
 package hhttp
 
 import (
-	"go-resources/lambda/helpers/hctx"
 	"net/http"
 	"runtime/debug"
 	"time"
+
+	"github.com/brunetto/go-resources/lambda/helpers/hctx"
 
 	"github.com/pkg/errors"
 	"github.com/rs/zerolog"

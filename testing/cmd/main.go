@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	"go-resources/testing/div"
 	"log"
+
+	"github.com/brunetto/go-resources/testing/div"
 )
 
 func main() {
