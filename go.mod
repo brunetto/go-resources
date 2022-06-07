@@ -1,4 +1,4 @@
-module go-resources
+module github.com/brunetto/go-resources
 
 go 1.18
 
