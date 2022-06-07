@@ -72,7 +72,8 @@ func newHandler( /* your depts here */ ) http.HandlerFunc {
 		// Execute business logic
 		out, err := example.DoStuff(ctx, in)
 		if err != nil {
-			http.Error(w, errors.Wrap(err, "can't do stuff").Error(), http.StatusBadRequest)
+			// if you want you can switch over the error type
+			http.Error(w, errors.Wrap(err, "can't do stuff").Error(), http.StatusInternalServerError)
 			return
 		}
 
