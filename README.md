@@ -144,3 +144,5 @@
 * [An alternative JSON decoder for Go.](https://github.com/pkg/json)
 * [The Go+ language for engineering, STEM education, and data science](https://github.com/goplus/gop)
 * [Thist](https://github.com/bsipos/thist) (terminal histograms)
+* https://github.com/shivamMg/trie
+* https://taskfile.dev/
