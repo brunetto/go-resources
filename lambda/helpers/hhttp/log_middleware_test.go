@@ -111,6 +111,10 @@ func TestNewLogAndRecover(t *testing.T) {
 			}
 
 			assert.Equal(t, tt.wantResponseMessage, string(responseMessage))
+
+			if tt.wantStatus != http.StatusOK {
+				assert.Equal(t, string(responseMessage), msg.Message)
+			}
 		})
 	}
 }
