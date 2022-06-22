@@ -37,6 +37,7 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 				lg2 := lg.With().
 					Int("code", sr.StatusCode).
 					Float64("duration_ms", float64(time.Since(t0).Milliseconds())).
+					Float64("duration_ns", float64(time.Since(t0).Nanoseconds())).
 					Logger()
 
 				if sr.StatusCode == http.StatusOK {
