@@ -42,7 +42,7 @@ func main() {
 	// This means we don't waste time initializing things every time.
 
 	// ⬇️ Everything below here is called for each execution (invocation).
-	lambda.Start(gorillamux.New(router))
+	lambda.Start(gorillamux.New(router).ProxyWithContext)
 }
 
 func newHandler( /* your depts here */ ) http.HandlerFunc {
