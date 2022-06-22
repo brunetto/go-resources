@@ -47,6 +47,8 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 
 			defer func() { // log response status and duration
 				lg2 := lg.With().
+					Str("path", r.URL.Path).
+					Str("method", r.Method).
 					Int("status_code", sr.StatusCode).
 					Float64("duration_ms", float64(time.Since(t0).Milliseconds())).
 					Float64("duration_ns", float64(time.Since(t0).Nanoseconds())).
