@@ -44,7 +44,10 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 			lg = hctx.CtxLogger(ctx, lg)
 
 			// wrap http response
-			sr := &StatusRecorder{ResponseWriter: w, StatusCode: http.StatusOK}
+			sr := &StatusRecorder{
+				ResponseWriter: w,
+				// StatusCode:     http.StatusOK,
+			}
 
 			defer func() { // log response status and duration
 				lg2 := lg.With().
