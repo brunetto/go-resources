@@ -25,6 +25,7 @@ func (sr *StatusRecorder) WriteHeader(statuscode int) {
 
 // Write is needed to wrap the original write function otherwise our WriteHeader won't be called
 // https://stackoverflow.com/questions/66367237/cant-track-http-response-code-in-middleware
+// btw not working ;(
 func (sr *StatusRecorder) Write(p []byte) (int, error) {
 	if !sr.written {
 		sr.WriteHeader(http.StatusOK)
@@ -43,7 +44,7 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 			lg = hctx.CtxLogger(ctx, lg)
 
 			// wrap http response
-			sr := &StatusRecorder{ResponseWriter: w}
+			sr := &StatusRecorder{ResponseWriter: w, StatusCode: http.StatusOK}
 
 			defer func() { // log response status and duration
 				lg2 := lg.With().
