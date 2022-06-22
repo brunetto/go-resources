@@ -14,11 +14,23 @@ import (
 type StatusRecorder struct {
 	StatusCode int
 	http.ResponseWriter
+	written bool
 }
 
 func (sr *StatusRecorder) WriteHeader(statuscode int) {
+	sr.written = true
 	sr.StatusCode = statuscode
 	sr.ResponseWriter.WriteHeader(statuscode)
+}
+
+// Write is needed to wrap the original write function otherwise our WriteHeader won't be called
+// https://stackoverflow.com/questions/66367237/cant-track-http-response-code-in-middleware
+func (sr *StatusRecorder) Write(p []byte) (int, error) {
+	if !sr.written {
+		sr.WriteHeader(http.StatusOK)
+	}
+
+	return sr.ResponseWriter.Write(p)
 }
 
 func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { // middleware constructor
@@ -35,7 +47,7 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 
 			defer func() { // log response status and duration
 				lg2 := lg.With().
-					Int("code", sr.StatusCode).
+					Int("status_code", sr.StatusCode).
 					Float64("duration_ms", float64(time.Since(t0).Milliseconds())).
 					Float64("duration_ns", float64(time.Since(t0).Nanoseconds())).
 					Logger()
