@@ -86,6 +86,10 @@
 * https://earthly.dev/blog/golang-errors/
 
 
+## JSON
+
+* https://pkg.go.dev/github.com/Jeffail/gabs#section-readme
+
 ## Auth/authz
 
 * [Go HTTPS servers with TLS](https://eli.thegreenplace.net/2021/go-https-servers-with-tls/)
