@@ -14,10 +14,10 @@ import (
 func CtxLogger(ctx context.Context, lg zerolog.Logger) zerolog.Logger {
 	lc, ok := core.GetRuntimeContextFromContext(ctx)
 	if ok {
-		return lg.With().Str("reqID", lc.AwsRequestID).Logger()
+		return lg.With().Str("req_id", lc.AwsRequestID).Logger()
 	}
 
-	return lg.With().Str("reqID", xid.New().String()).Logger()
+	return lg.With().Str("req_id", xid.New().String()).Logger()
 }
 
 // If you want uuidv4 instead of xid
