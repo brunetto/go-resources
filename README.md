@@ -150,3 +150,4 @@
 * [Thist](https://github.com/bsipos/thist) (terminal histograms)
 * https://github.com/shivamMg/trie
 * https://taskfile.dev/
+* https://github.com/go-playground/validator/
