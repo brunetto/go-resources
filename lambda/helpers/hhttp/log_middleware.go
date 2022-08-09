@@ -62,10 +62,10 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 					Float64("duration_ns", float64(time.Since(t0).Nanoseconds())).
 					Logger()
 
-				if sr.StatusCode == http.StatusOK {
-					lg2.Info().Send()
-				} else {
+				if sr.StatusCode < http.StatusOK || sr.StatusCode > http.StatusBadRequest {
 					lg2.Error().Msg(sr.Response.String())
+				} else {
+					lg2.Info().Send()
 				}
 			}()
 
