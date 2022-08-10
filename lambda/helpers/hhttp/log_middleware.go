@@ -63,7 +63,7 @@ func NewLogAndRecover(lg zerolog.Logger) func(next http.Handler) http.Handler { 
 					Logger()
 
 				if sr.StatusCode < http.StatusOK || sr.StatusCode > http.StatusBadRequest {
-					lg2.Error().Msg(sr.Response.String())
+					lg2.Error().Err(errors.New(sr.Response.String())).Send()
 				} else {
 					lg2.Info().Send()
 				}
