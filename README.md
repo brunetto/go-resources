@@ -32,6 +32,7 @@
 * [Ashley McNamara + Brian Ketelsen. Go best practices.](https://www.youtube.com/watch?v=MzTcsI6tn-0&ab_channel=GopherConRussia)
 * [GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps](https://www.youtube.com/watch?v=oL6JBUk6tj0&ab_channel=GopherAcademy) 
 * [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
+* [Packages as layers](https://www.gobeyond.dev/packages-as-layers/)
 * [GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming](https://www.youtube.com/watch?v=PTE4VJIdHPg&ab_channel=GopherConEurope)
 
 ## Web
