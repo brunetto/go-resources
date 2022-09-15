@@ -100,6 +100,10 @@
 * https://github.com/rs/zerolog
 * https://betterstack.com/community/guides/logging/zerolog/
 
+## Vulnerabilities 
+
+* https://go.dev/blog/vuln
+
 ## Context
 
 * [Context Package Semantics In Go](https://www.ardanlabs.com/blog/2019/09/context-package-semantics-in-go.html)
