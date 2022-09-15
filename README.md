@@ -95,6 +95,10 @@
 
 * [Go HTTPS servers with TLS](https://eli.thegreenplace.net/2021/go-https-servers-with-tls/)
 
+## Logging
+
+* https://github.com/rs/zerolog
+* https://betterstack.com/community/guides/logging/zerolog/
 
 ## Context
 
