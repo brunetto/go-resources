@@ -86,7 +86,6 @@
 * https://levelup.gitconnected.com/better-error-handling-in-golang-theory-and-practical-tips-758b90d3f6b4
 * https://earthly.dev/blog/golang-errors/
 
-
 ## JSON
 
 * https://pkg.go.dev/github.com/Jeffail/gabs#section-readme
@@ -146,6 +145,7 @@
 # Interesting libraries and projects
 
 * [Build cross-platform GUI applications using Go + HTML + CSS + JS](https://wails.io/)
+   * https://wails.io/blog/wails-v2-released/
 * [Commit Message Emoji 👋](https://github.com/dannyfritz/commit-message-emoji)
 * Image manipulation
    * [Caire: Content aware image resize library](https://github.com/esimov/caire)
