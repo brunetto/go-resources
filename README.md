@@ -34,6 +34,7 @@
 * [Standard Package Layout](https://medium.com/@benbjohnson/standard-package-layout-7cdbc8391fc1)
 * [Packages as layers](https://www.gobeyond.dev/packages-as-layers/)
 * [GopherCon EU 2018: Peter Bourgon - Best Practices for Industrial Programming](https://www.youtube.com/watch?v=PTE4VJIdHPg&ab_channel=GopherConEurope)
+* [Package Oriented Design](https://www.ardanlabs.com/blog/2017/02/package-oriented-design.html)
 
 ## Web
 
